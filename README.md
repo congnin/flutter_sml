@@ -10,7 +10,7 @@ A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-- [Udemy course: First course](https://www.udemy.com/course/flutter-dart-the-complete-flutter-app-development-course)
+- [Flutter & Dart - The Complete Flutter App Development Course](https://www.udemy.com/course/flutter-dart-the-complete-flutter-app-development-course)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
