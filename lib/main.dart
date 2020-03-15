@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_app/component/navigation.dart';
 import 'package:flutter_app/weather_forecast/weather_forecast.dart';
 
 final ThemeData _appTheme = _buildAppTheme();
@@ -42,17 +43,32 @@ TextTheme _appTextTheme(TextTheme base) {
       );
 }
 
-void main() async {
-  SystemChrome.setEnabledSystemUIOverlays([]);
-  runApp(MyApp());
-}
+//void main() async {
+//  SystemChrome.setEnabledSystemUIOverlays([]);
+//  runApp(MyApp());
+//}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Tune In Music Player",
-      home: WeatherForecast(),
+      home: FirstRoute(),
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    title: 'Named Routes Demo',
+    // Start the app with the "homeScreen" named route. In this case, the app starts
+    // on the HomeScreen widget.
+    initialRoute: 'homeScreen',
+    routes: {
+      // When navigating to the "homeScreen" route, build the HomeScreen widget.
+      'homeScreen': (context) => FirstScreen(),
+      // When navigating to the "secondScreen" route, build the SecondScreen widget.
+      'secondScreen': (context) => SecondScreen(),
+    },
+  ));
 }
