@@ -1,6 +1,66 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(new MaterialApp(home: TextFieldApp()));
+}
+
+class TextFieldApp extends StatefulWidget {
+  @override
+  _textApp createState() => new _textApp();
+}
+
+class _textApp extends State<TextFieldApp> {
+  String _text = '';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.lime,
+        title: Text("Text Field App"),
+      ),
+      body: Column(
+        children: <Widget>[
+          Align(
+            alignment: Alignment.center,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "User name : ",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: TextField(
+              /* onChanged: (String text){  //  on Changed ie while entering value real time.
+              setState(() {
+                _text = text;
+              });
+            },*/
+              onSubmitted: (String text) {
+                setState(() {
+                  _text = text;
+                });
+              },
+              decoration: InputDecoration(
+                hintText: "Enter User Name", labelText: "User Name"
+              ),
+            ),
+          ),
+          Text(_text)
+        ],
+      ),
+    );
+  }
+}
+
 //https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a
 class TextFieldDemo extends StatelessWidget {
   @override
