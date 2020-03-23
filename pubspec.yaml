@@ -39,11 +39,16 @@ dependencies:
   rxdart: ^0.22.0
   scoped_model: ^1.0.1
   flutter_redux: ^0.6.0
+  inject:
+    path: ./injection/inject.dart/package/inject
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: "^0.7.3"
+  build_runner: ^1.0.0
+  inject_generator:
+    path: ./injection/inject.dart/package/inject_generator
 
 flutter_icons:
   android: "launcher_icon"

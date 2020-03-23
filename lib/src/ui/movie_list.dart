@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/bloc_ex/blocs/movie_bloc.dart';
-import 'package:flutter_app/bloc_ex/blocs/movie_detail_bloc_provider.dart';
-import 'package:flutter_app/bloc_ex/models/item_model.dart';
-import 'package:flutter_app/bloc_ex/ui/movie_detail.dart';
+import 'package:flutter_app/src/blocs/movies_bloc.dart';
+import 'package:flutter_app/src/models/item_model.dart';
 
 class MovieList extends StatefulWidget {
+  final MoviesBloc bloc;
+
+  MovieList(this.bloc);
+
   @override
   createState() => MovieListState();
 }
@@ -14,12 +16,13 @@ class MovieListState extends State<MovieList> {
   @override
   void initState() {
     super.initState();
-    bloc.fetchAllMovies();
+    widget.bloc.init();
+    widget.bloc.fetchAllMovies();
   }
 
   @override
   void dispose() {
-    bloc.dispose();
+    widget.bloc.dispose();
     super.dispose();
   }
 
@@ -30,7 +33,7 @@ class MovieListState extends State<MovieList> {
         title: Text('Popular Movies'),
       ),
       body: StreamBuilder(
-        stream: bloc.allMovies,
+        stream: widget.bloc.allMovies,
         builder: (context, AsyncSnapshot<ItemModel> snapshot) {
           if (snapshot.hasData) {
             return buildList(snapshot);
@@ -65,18 +68,6 @@ class MovieListState extends State<MovieList> {
   }
 
   openDetailPage(ItemModel data, int index) {
-    final page = MovieDetailBlocProvider(
-      child: MovieDetail(
-        title: data.results[index].title,
-        posterUrl: data.results[index].backdrop_path,
-        description: data.results[index].overview,
-        releaseDate: data.results[index].release_date,
-        voteAverage: data.results[index].vote_average.toString(),
-        movieId: data.results[index].id,
-      ),
-    );
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
-      return page;
-    }));
+    Navigator.pushNamed(context, 'movieDetail', arguments: data.results[index]);
   }
 }
