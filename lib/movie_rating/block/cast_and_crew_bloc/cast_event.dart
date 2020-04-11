@@ -6,7 +6,7 @@ abstract class CastEvent extends Equatable {
 }
 
 class FetchCastAndCrewEvent extends CastEvent {
-  String movieId;
+  final String movieId;
   FetchCastAndCrewEvent({@required this.movieId});
 
   @override

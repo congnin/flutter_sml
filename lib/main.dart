@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/component/navigation.dart';
-import 'package:flutter_app/weather_forecast/weather_forecast.dart';
 
 final ThemeData _appTheme = _buildAppTheme();
 
@@ -72,3 +71,4 @@ void main() {
     },
   ));
 }
+
