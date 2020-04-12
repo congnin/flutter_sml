@@ -18,6 +18,8 @@ A few resources to get you started if this is your first Flutter project:
 - [Understand the Basics & Animate with Ease](https://resocoder.com/2019/08/01/flutter-animation-tutorial-understand-the-basics-animate-with-ease/)
 - [Proper Error Handling - Principles](https://resocoder.com/2019/12/11/proper-error-handling-in-flutter-dart-1-principles/)
 - [Functional Error Handling - Either, Task, FP](https://resocoder.com/2019/12/14/functional-error-handling-in-flutter-dart-2-either-task-fp/)
+- [Free Code With Dart Operators](https://medium.com/flutter-community/simple-and-bug-free-code-with-dart-operators-2e81211cecfe)
+- [Make SafeArea Responsive](https://resocoder.com/2019/11/22/make-safearea-responsive-in-flutter-responsive-widget-tutorial/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
