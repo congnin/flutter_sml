@@ -20,6 +20,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Functional Error Handling - Either, Task, FP](https://resocoder.com/2019/12/14/functional-error-handling-in-flutter-dart-2-either-task-fp/)
 - [Free Code With Dart Operators](https://medium.com/flutter-community/simple-and-bug-free-code-with-dart-operators-2e81211cecfe)
 - [Make SafeArea Responsive](https://resocoder.com/2019/11/22/make-safearea-responsive-in-flutter-responsive-widget-tutorial/)
+- [Tinder UI](https://github.com/Ivaskuu/tinder_cards)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,

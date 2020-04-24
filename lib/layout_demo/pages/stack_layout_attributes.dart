@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_attribute_selector.dart';
+
+import 'layout_attribute_selector.dart';
 
 class StackLayoutAttributes extends StatefulWidget {
 

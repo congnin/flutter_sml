@@ -1,16 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
-import 'package:flutter_app/ui/pages/baseline_page.dart';
-import 'package:flutter_app/ui/pages/expanded_page.dart';
-import 'package:flutter_app/ui/pages/hero_page.dart';
-import 'package:flutter_app/ui/pages/list_page.dart';
-import 'package:flutter_app/ui/pages/nested_page.dart';
-import 'package:flutter_app/ui/pages/padding_page.dart';
-import 'package:flutter_app/ui/pages/page_view_page.dart';
-import 'package:flutter_app/ui/pages/row_column_page.dart';
-import 'package:flutter_app/ui/pages/slivers_page.dart';
-import 'package:flutter_app/ui/pages/stack_page.dart';
+
+import 'pages/baseline_page.dart';
+import 'pages/expanded_page.dart';
+import 'pages/hero_page.dart';
+import 'pages/layout_type.dart';
+import 'pages/list_page.dart';
+import 'pages/nested_page.dart';
+import 'pages/padding_page.dart';
+import 'pages/page_view_page.dart';
+import 'pages/row_column_page.dart';
+import 'pages/slivers_page.dart';
+import 'pages/stack_page.dart';
 
 class MainPage extends StatefulWidget {
 

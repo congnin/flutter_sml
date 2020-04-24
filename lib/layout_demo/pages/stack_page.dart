@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
-import 'package:flutter_app/ui/pages/main_app_bar.dart';
-import 'package:flutter_app/ui/pages/stack_layout_attributes.dart';
+
+import 'layout_type.dart';
+import 'main_app_bar.dart';
+import 'stack_layout_attributes.dart';
 
 class StackPage extends StatefulWidget implements HasLayoutGroup {
   StackPage({Key key, this.layoutGroup, this.onLayoutToggle}) : super(key: key);

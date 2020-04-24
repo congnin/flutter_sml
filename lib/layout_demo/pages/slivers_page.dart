@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
+
+import 'layout_type.dart';
 
 class SliversPage extends StatelessWidget implements HasLayoutGroup {
   SliversPage({Key key, this.layoutGroup, this.onLayoutToggle})

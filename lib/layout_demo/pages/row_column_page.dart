@@ -1,8 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
-import 'package:flutter_app/ui/pages/main_app_bar.dart';
-import 'package:flutter_app/ui/pages/row_column_layout_attributes.dart';
+
+import 'layout_type.dart';
+import 'main_app_bar.dart';
+import 'row_column_layout_attributes.dart';
 
 class RowColumnPage extends StatefulWidget implements HasLayoutGroup {
   final LayoutGroup layoutGroup;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
+
+import 'layout_type.dart';
 
 class HeroHeader extends SliverPersistentHeaderDelegate {
   HeroHeader({

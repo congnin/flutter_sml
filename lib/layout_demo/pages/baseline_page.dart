@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/baseline_layout_attributes.dart';
 
+import 'baseline_layout_attributes.dart';
 import 'layout_type.dart';
 import 'main_app_bar.dart';
 

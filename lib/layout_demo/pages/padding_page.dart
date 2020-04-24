@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/layout_type.dart';
-import 'package:flutter_app/ui/pages/main_app_bar.dart';
+
+import 'layout_type.dart';
+import 'main_app_bar.dart';
 
 class PaddingPage extends StatelessWidget implements HasLayoutGroup {
   PaddingPage({Key key, this.layoutGroup, this.onLayoutToggle})
