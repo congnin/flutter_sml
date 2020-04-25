@@ -80,6 +80,7 @@ flutter:
     - images/
     - assets/icons/
     - assets/
+    - assets/img/
 
   fonts:
     - family: Boxicons
