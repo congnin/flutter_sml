@@ -21,6 +21,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Free Code With Dart Operators](https://medium.com/flutter-community/simple-and-bug-free-code-with-dart-operators-2e81211cecfe)
 - [Make SafeArea Responsive](https://resocoder.com/2019/11/22/make-safearea-responsive-in-flutter-responsive-widget-tutorial/)
 - [Tinder UI](https://github.com/Ivaskuu/tinder_cards)
+- [Planets-UI-tutorial](https://sergiandreplace.com//tags/open-source/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
