@@ -83,6 +83,9 @@ flutter:
     - assets/
     - assets/img/
     - assets/solitaire/
+    - assets/items.json
+    - assets/pokemons.json
+    - assets/images/
 
   fonts:
     - family: Boxicons

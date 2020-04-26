@@ -24,6 +24,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Planets-UI-tutorial](https://sergiandreplace.com//tags/open-source/)
 - [Firebase-googlelabs](https://codelabs.developers.google.com/codelabs/flutter-firebase/)
 - [Cupertino-googlelabs](https://codelabs.developers.google.com/codelabs/flutter-cupertino/)
+- [Pokedex](https://github.com/scitbiz/flutter_pokedex)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
