@@ -25,6 +25,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Firebase-googlelabs](https://codelabs.developers.google.com/codelabs/flutter-firebase/)
 - [Cupertino-googlelabs](https://codelabs.developers.google.com/codelabs/flutter-cupertino/)
 - [Pokedex](https://github.com/scitbiz/flutter_pokedex)
+- [Bottom Tab Bar animation](https://medium.com/@tonyowen/flutter-bottom-tab-bar-animation-75d1ca58c096)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
