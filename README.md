@@ -27,6 +27,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Pokedex](https://github.com/scitbiz/flutter_pokedex)
 - [Bottom Tab Bar animation](https://medium.com/@tonyowen/flutter-bottom-tab-bar-animation-75d1ca58c096)
 - [Build reactive mobile apps with Flutter](https://www.youtube.com/watch?v=RS36gBEp8OI)
+- [Play and pause a video](https://flutter.dev/docs/cookbook/plugins/play-video)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
