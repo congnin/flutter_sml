@@ -29,6 +29,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Build reactive mobile apps with Flutter](https://www.youtube.com/watch?v=RS36gBEp8OI)
 - [Play and pause a video](https://flutter.dev/docs/cookbook/plugins/play-video)
 - [Request Retry with Di library](https://resocoder.com/2020/03/23/dio-connectivity-retry-interceptor-flutter-tutorial/)
+- [Environments with Codemagic CI/CD](https://resocoder.com/2020/02/19/environments-flavors-in-flutter-with-codemagic-ci-cd/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
