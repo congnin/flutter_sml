@@ -28,6 +28,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Bottom Tab Bar animation](https://medium.com/@tonyowen/flutter-bottom-tab-bar-animation-75d1ca58c096)
 - [Build reactive mobile apps with Flutter](https://www.youtube.com/watch?v=RS36gBEp8OI)
 - [Play and pause a video](https://flutter.dev/docs/cookbook/plugins/play-video)
+- [Request Retry with Di library](https://resocoder.com/2020/03/23/dio-connectivity-retry-interceptor-flutter-tutorial/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,

@@ -53,7 +53,7 @@ dependencies:
   # Local cache
   shared_preferences: ^0.5.6+3
   cloud_firestore: ^0.13.5
-
+  dio: ^3.0.9
 
 dev_dependencies:
   flutter_test:
