@@ -23,6 +23,7 @@ dependencies:
   sqflite:
   path:
   keyboard_dismisser:
+  keyboard_attachable: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
