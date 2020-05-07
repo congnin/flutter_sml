@@ -22,6 +22,7 @@ dependencies:
   video_player:
   sqflite:
   path:
+  keyboard_dismisser:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -44,7 +45,7 @@ dependencies:
   rxdart: ^0.22.0
   scoped_model: ^1.0.1
   flutter_redux: ^0.6.0
-  provider: ^3.1.0+1
+  provider: 
   kiwi: ^0.2.0
   # Service locator
   get_it: ^4.0.1

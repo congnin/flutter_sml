@@ -31,6 +31,8 @@ A few resources to get you started if this is your first Flutter project:
 - [Request Retry with Di library](https://resocoder.com/2020/03/23/dio-connectivity-retry-interceptor-flutter-tutorial/)
 - [Environments with Codemagic CI/CD](https://resocoder.com/2020/02/19/environments-flavors-in-flutter-with-codemagic-ci-cd/)
 - [Using SQLite in Flutter](https://medium.com/flutter-community/using-sqlite-in-flutter-187c1a82e8b)
+- [Dart Vocabulary](https://ptyagicodecamp.github.io/a-dartflutter-vocabulary-series.html)
+- [Dismiss focus textfield](https://pub.dev/packages/keyboard_dismisser)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,

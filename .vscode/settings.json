@@ -2,5 +2,11 @@
     "editor.fontSize": 10,
     "window.zoomLevel": 1,
     "debug.console.fontSize": 10,
-    "terminal.integrated.fontSize": 10
+    "terminal.integrated.fontSize": 10,
+    "editor.formatOnSave": true,
+    "dart.flutterHotRestartOnSave": true,
+    "dart.previewFlutterGutterIcons": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.enableMachineLearningCodeCompletion": true
 }
