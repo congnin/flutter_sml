@@ -33,6 +33,8 @@ A few resources to get you started if this is your first Flutter project:
 - [Using SQLite in Flutter](https://medium.com/flutter-community/using-sqlite-in-flutter-187c1a82e8b)
 - [Dart Vocabulary](https://ptyagicodecamp.github.io/a-dartflutter-vocabulary-series.html)
 - [Dismiss focus textfield](https://pub.dev/packages/keyboard_dismisser)
+- [keyboard attachable](https://pub.dev/packages/keyboard_attachable)
+- [Generator for JSON serialization and deserialization](https://github.com/dart-lang/json_serializable)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
