@@ -19,6 +19,7 @@ dependencies:
   string_scanner: ^1.0.5
   crypto: ^2.1.4
   webview_flutter:
+  device_info:
 
   firebase_auth: ^0.16.0
   firebase_database:
