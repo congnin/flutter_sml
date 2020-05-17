@@ -87,6 +87,7 @@ flutter:
     - assets/images/
     - assets/config/
     - assets/taxi/
+    - assets/images/scratch/
 
   fonts:
     - family: Boxicons
