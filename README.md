@@ -37,6 +37,7 @@ A few resources to get you started if this is your first Flutter project:
 - [Generator for JSON serialization and deserialization](https://github.com/dart-lang/json_serializable)
 - [5 Useful Dart Packages](https://medium.com/flutter-community/5-useful-dart-packages-92fa3ec197d0)
 - [Flutter plugins](https://github.com/flutter/plugins)
+- [YouTube: Flutter Travel UI Tutorial | Apps From Scratch](https://www.youtube.com/watch?v=CSa6Ocyog4U&feature=youtu.be)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
