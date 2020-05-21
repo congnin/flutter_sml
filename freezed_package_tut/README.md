@@ -1,6 +1,6 @@
 # freezed_package_tut
 
-A new Flutter project.
+Welcome to Freezed, yet another code generator for unions/pattern-matching/copy.
 
 ## Tutorial links
 
