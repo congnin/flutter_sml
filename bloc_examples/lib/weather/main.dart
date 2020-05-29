@@ -3,21 +3,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
 
-import 'bloc/weather_bloc.dart';
-import 'data/weather_api_client.dart';
-import 'data/weather_repository.dart';
-import 'widget/weather_screen.dart';
+import 'bloc/blocs.dart';
+import 'data/repositories.dart';
+import 'widget/widgets.dart';
 
 void main() {
-  BlocSupervisor.delegate = SimpleBlocDelegate();
-
   final WeatherRepository weatherRepository = WeatherRepository(
     weatherApiClient: WeatherApiClient(
       httpClient: http.Client(),
     ),
   );
 
-  runApp(App(weatherRepository: weatherRepository));
+  BlocSupervisor.delegate = SimpleBlocDelegate();
+
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider<ThemeBloc>(
+        create: (context) => ThemeBloc(),
+      ),
+      BlocProvider<SettingsBloc>(
+        create: (context) => SettingsBloc(),
+      ),
+    ],
+    child: App(weatherRepository: weatherRepository),
+  ));
 }
 
 class App extends StatelessWidget {
@@ -29,12 +38,19 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Weather',
-      home: BlocProvider(
-        create: (context) => WeatherBloc(weatherRepository: weatherRepository),
-        child: WeatherScreen(),
-      ),
+    return BlocBuilder<ThemeBloc, ThemeState>(
+      builder: (context, themeState) {
+        return MaterialApp(
+          title: 'Flutter Weather',
+          theme: themeState.theme,
+          home: BlocProvider(
+            create: (context) => WeatherBloc(
+              weatherRepository: weatherRepository,
+            ),
+            child: WeatherScreen(),
+          ),
+        );
+      },
     );
   }
 }
