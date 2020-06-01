@@ -25,6 +25,10 @@ dependencies:
 
   wave: ^0.0.8
 
+  cloud_firestore: ^0.13.6
+  firebase_core: ^0.4.5
+  firebase_auth: ^0.16.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
