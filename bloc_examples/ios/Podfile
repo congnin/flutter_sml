@@ -76,12 +76,6 @@ target 'Runner' do
     File.symlink(path, symlink)
     pod name, :path => File.join(symlink, 'ios')
   end
-
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
-
-  # Optionally, include the Swift extensions if you're using Swift.
-  pod 'FirebaseFirestoreSwift'
 end
 
 post_install do |installer|

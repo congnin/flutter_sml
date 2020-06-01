@@ -61,7 +61,7 @@ class TodosApp extends StatelessWidget {
                 }
                 if (state is Unauthenticated) {
                   return Center(
-                    child: Text('Could not authenticate 111with Firestore'),
+                    child: Text('Could not authenticate with Firestore'),
                   );
                 }
                 return Center(child: CircularProgressIndicator());

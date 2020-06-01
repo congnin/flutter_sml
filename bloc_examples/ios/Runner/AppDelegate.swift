@@ -9,7 +9,6 @@ import Firebase
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     FirebaseApp.configure()
-    let db = Firestore.firestore()
     GeneratedPluginRegistrant.register(with: self)
     return true
   }
