@@ -17,10 +17,8 @@ Once you've downloaded the .json and .plist files run the project.
 
         multiDexEnabled true
     }
-and 
+    and 
     dependencies {
-        ...
-
         implementation 'com.android.support:multidex:1.0.3'
     }
 ### - Enable Jetifier
