@@ -1,117 +1,174 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+import 'basics/01_animated_container.dart';
+import 'basics/02_page_route_builder.dart';
+import 'basics/03_animation_controller.dart';
+import 'basics/04_tweens.dart';
+import 'basics/05_animated_builder.dart';
+import 'basics/06_custom_tween.dart';
+import 'basics/07_tween_sequence.dart';
+import 'basics/08_fade_transition.dart';
+import 'misc/animated_list.dart';
+import 'misc/animated_positioned.dart';
+import 'misc/animated_switcher.dart';
+import 'misc/card_swipe.dart';
+import 'misc/carousel.dart';
+import 'misc/curved_animation.dart';
+import 'misc/expand_card.dart';
+import 'misc/focus_image.dart';
+import 'misc/hero_animation.dart';
+import 'misc/physics_card_drag.dart';
+import 'misc/repeating_animation.dart';
+
+void main() => runApp(AnimationSamples());
+
+class Demo {
+  final String name;
+  final String route;
+  final WidgetBuilder builder;
+
+  const Demo({this.name, this.route, this.builder});
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+final basicDemos = [
+  Demo(
+      name: 'AnimatedContainer',
+      route: AnimatedContainerDemo.routeName,
+      builder: (context) => AnimatedContainerDemo()),
+  Demo(
+      name: 'PageRouteBuilder',
+      route: PageRouteBuilderDemo.routeName,
+      builder: (context) => PageRouteBuilderDemo()),
+  Demo(
+      name: 'Animation Controller',
+      route: AnimationControllerDemo.routeName,
+      builder: (context) => AnimationControllerDemo()),
+  Demo(
+      name: 'Tweens',
+      route: TweenDemo.routeName,
+      builder: (context) => TweenDemo()),
+  Demo(
+      name: 'AnimatedBuilder',
+      route: AnimatedBuilderDemo.routeName,
+      builder: (context) => AnimatedBuilderDemo()),
+  Demo(
+      name: 'Custom Tween',
+      route: CustomTweenDemo.routeName,
+      builder: (context) => CustomTweenDemo()),
+  Demo(
+      name: 'Tween Sequences',
+      route: TweenSequenceDemo.routeName,
+      builder: (context) => TweenSequenceDemo()),
+  Demo(
+      name: 'Fade Transition',
+      route: FadeTransitionDemo.routeName,
+      builder: (context) => FadeTransitionDemo()),
+];
+
+final miscDemos = [
+  Demo(
+      name: 'Expandable Card',
+      route: ExpandCardDemo.routeName,
+      builder: (context) => ExpandCardDemo()),
+  Demo(
+      name: 'Carousel',
+      route: CarouselDemo.routeName,
+      builder: (context) => CarouselDemo()),
+  Demo(
+      name: 'Focus Image',
+      route: FocusImageDemo.routeName,
+      builder: (context) => FocusImageDemo()),
+  Demo(
+      name: 'Card Swipe',
+      route: CardSwipeDemo.routeName,
+      builder: (context) => CardSwipeDemo()),
+  Demo(
+      name: 'Repeating Animation',
+      route: RepeatingAnimationDemo.routeName,
+      builder: (context) => RepeatingAnimationDemo()),
+  Demo(
+      name: 'Spring Physics',
+      route: PhysicsCardDragDemo.routeName,
+      builder: (context) => PhysicsCardDragDemo()),
+  Demo(
+      name: 'AnimatedList',
+      route: AnimatedListDemo.routeName,
+      builder: (context) => AnimatedListDemo()),
+  Demo(
+      name: 'AnimatedPositioned',
+      route: AnimatedPositionedDemo.routeName,
+      builder: (context) => AnimatedPositionedDemo()),
+  Demo(
+      name: 'AnimatedSwitcher',
+      route: AnimatedSwitcherDemo.routeName,
+      builder: (context) => AnimatedSwitcherDemo()),
+  Demo(
+      name: 'Hero Animation',
+      route: HeroAnimationDemo.routeName,
+      builder: (context) => HeroAnimationDemo()),
+  Demo(
+      name: 'Curved Animation',
+      route: CurvedAnimationDemo.routeName,
+      builder: (context) => CurvedAnimationDemo()),
+];
+
+final basicDemoRoutes =
+    Map.fromEntries(basicDemos.map((d) => MapEntry(d.route, d.builder)));
+
+final miscDemoRoutes =
+    Map.fromEntries(miscDemos.map((d) => MapEntry(d.route, d.builder)));
+
+final allRoutes = <String, WidgetBuilder>{
+  ...basicDemoRoutes,
+  ...miscDemoRoutes,
+};
+
+class AnimationSamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Animation Samples',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primarySwatch: Colors.deepPurple,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      routes: allRoutes,
+      home: HomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
+class HomePage extends StatelessWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  Widget build(BuildContext context) {
+    final headerStyle = Theme.of(context).textTheme.headline6;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Animation Samples'),
+      ),
+      body: ListView(
+        children: [
+          ListTile(title: Text('Basics', style: headerStyle)),
+          ...basicDemos.map((d) => DemoTile(d)),
+          ListTile(title: Text('Misc', style: headerStyle)),
+          ...miscDemos.map((d) => DemoTile(d)),
+        ],
+      ),
+    );
+  }
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class DemoTile extends StatelessWidget {
+  final Demo demo;
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+  DemoTile(this.demo);
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    return ListTile(
+      title: Text(demo.name),
+      onTap: () {
+        Navigator.pushNamed(context, demo.route);
+      },
     );
   }
 }
