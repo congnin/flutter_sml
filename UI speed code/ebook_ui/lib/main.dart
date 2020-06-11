@@ -40,7 +40,7 @@ class WelcomeScreen extends StatelessWidget {
           children: <Widget>[
             RichText(
               text: TextSpan(
-                style: Theme.of(context).textTheme.display3,
+                style: Theme.of(context).textTheme.headline2,
                 children: [
                   TextSpan(
                     text: "flamin",
