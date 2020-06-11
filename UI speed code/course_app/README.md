@@ -16,4 +16,4 @@ Design made by by simantOo [link](https://www.uplabs.com/posts/course-app-free)
 
 ### Course App Final UI
 
-![Course Flutter App UI](/course_app.png)
+![Course Flutter App UI](course_app.png)
