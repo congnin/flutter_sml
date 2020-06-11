@@ -21,4 +21,4 @@ Now come to the details or meditation page, Top of the page has a title with a s
 
 ### Daily Exercises App Final UI
 
-![App UI](/ui.png)
+![App UI](ui.png)
