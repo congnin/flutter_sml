@@ -1,0 +1,21 @@
+name: todos_app_core
+
+environment:
+  sdk: '>=2.0.0-dev.28.0 <3.0.0'
+
+dependencies:
+  intl:
+  flutter:
+    sdk: flutter
+  path_provider:
+
+dev_dependencies:
+  intl_translation:
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the Icons class.
+  uses-material-design: true
