@@ -24,6 +24,7 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
 
   @override
   void onTransition(Transition<TimerEvent, TimerState> transition) {
+    print('fu fu');
     print(transition);
     super.onTransition(transition);
   }
