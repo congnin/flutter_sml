@@ -31,9 +31,7 @@ class MyHomePage extends StatefulWidget {
   }
 
   Future<String> createFutureCalculation(int count) {
-    return Future(() {
-      return computeListOfTimestamps(count);
-    });
+    return Future(() => computeListOfTimestamps(count));
   }
 
   @override
